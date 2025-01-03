@@ -1,4 +1,4 @@
- ## GitHub Copilot for QA Professionals training
+ ## Sample .NET C# app 
 
 Instructor: Andrew Scoppa
 
