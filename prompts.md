@@ -1,6 +1,6 @@
 @workspace I need a technical report describing the 'PR_WebApp' project. Include a comprehensive description of all classes. Highlight key features of the project.
 
-@workspace Review and recommend improvements to the PayrollLibrary project. Security and best practices are of he utmost importance. 
+@workspace Review and recommend improvements to the PayrollLibrary project. Security and best practices are of the utmost importance. 
 
 @workspace how do I scaffold MSTest test files for the classes in the 'PayrollLibrary' project?
 
