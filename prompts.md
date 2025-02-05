@@ -4,6 +4,10 @@
 
 @workspace how do I scaffold MSTest test files for the classes in the 'PayrollLibrary' project?
 
+@workspace perform a thorough code review of the 'PayrollLibrary' project. Recommend improvements to adhere to SOLID principles.
+
+show code examples of specific changes you recommended.
+
 @workspace Recommend a table design to match the employee class hierarchy in the 'PayrollLibrary' project folder. Use T-SQL to create the tables. Relationships should be one-to-one.
 
 @workspace describe how to use 'latex' to document the classes in the 'PR_WebApp'.
