@@ -8,6 +8,8 @@
 
 show code examples of specific changes you recommended.
 
+show me how to change the private fields of the Company class to private setters and getters.
+
 @workspace Recommend a table design to match the employee class hierarchy in the 'PayrollLibrary' project folder. Use T-SQL to create the tables. Relationships should be one-to-one.
 
 @workspace describe how to use 'latex' to document the classes in the 'PR_WebApp'.
