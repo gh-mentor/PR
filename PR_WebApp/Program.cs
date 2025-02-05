@@ -38,7 +38,40 @@ namespace PR_WebApp
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
-            app.Run();
+             name: Security Scan
+            
+            on:
+              push:
+                branches:
+                  - main
+              pull_request:
+                branches:
+                  - main
+              workflow_dispatch:
+            
+            jobs:
+              security-scan:
+                runs-on: windows-latest
+            
+                steps:
+                  - name: Checkout repository
+                    uses: actions/checkout@v2
+            
+                  - name: Setup .NET
+                    uses: actions/setup-dotnet@v2
+                    with:
+                      dotnet-version: '6.0.x'
+            
+                  - name: Install dependencies
+                    run: dotnet restore
+            
+                  - name: Run SecurityCodeScan
+                    run: dotnet build --no-restore /p:SecurityCodeScanConfigFile=SecurityCodeScan.config /p:RunAnalyzersDuringBuild=true /warnaserror /p:CodeAnalysisLogFile=security-scan.sarif
+            
+                  - name: Upload SARIF report
+                    uses: github/codeql-action/upload-sarif@v1
+                    with:
+                      sarif_file: security-scan.sarif
         }
     }
 }
