@@ -5,7 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E23AF00E-41D7-4B44-AEB5-8A47F74D8BC6}"
 	ProjectSection(SolutionItems) = preProject
-		inventory.sql = inventory.sql
+		prompts.md = prompts.md
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PR_WebApp", "PR_WebApp\PR_WebApp.csproj", "{D65EF660-7F95-45A0-9393-16F913109336}"
